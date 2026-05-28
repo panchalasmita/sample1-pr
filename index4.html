@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice Assignment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ececec;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Main Container */
+        .container {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        /* Flexbox */
+        .flexbox-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            width: 140px;
+            height: 45px;
+            border: 1px solid #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+
+        /* Grid */
+        .grid-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .grid-item {
+            background-color: orange;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Position Section */
+        .position-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .relative-box {
+            background-color: lightblue;
+            border: 1px solid #999;
+            padding: 18px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .parent-box {
+            position: relative;
+            height: 120px;
+            border: 1px solid #999;
+            background-color: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .static-box {
+            border: 1px solid #999;
+            background-color: white;
+            padding: 18px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* Fixed Box */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div>My Website</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <h1>CSS Practice Assignment</h1>
+        <p>Learn Flexbox, Grid and Positioning</p>
+
+        <!-- Flexbox -->
+        <div class="flexbox-title">Flexbox Example</div>
+
+        <div class="flex-container">
+            <div class="flex-item">HTML</div>
+            <div class="flex-item">CSS</div>
+            <div class="flex-item">JavaScript</div>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-title">Grid Layout Example</div>
+
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+
+        <!-- Position -->
+        <div class="position-title">CSS Position Values</div>
+
+        <div class="relative-box">
+            position: relative
+        </div>
+
+        <div class="parent-box">
+            Parent Box
+
+            <div class="absolute-box">
+                position: absolute
+            </div>
+        </div>
+
+        <div class="sticky-box">
+            position: sticky
+        </div>
+
+        <div class="static-box">
+            position: static (default)
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Simple CSS Assignment
+    </footer>
+
+    <!-- Fixed Position -->
+    <div class="fixed-box">
+        position: fixed
+    </div>
+
+</body>
+
+</html>
